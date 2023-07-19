@@ -4,6 +4,9 @@ import { HeaderComponent } from './components/header/header.component';
 import { ChoiceProductsComponent } from './components/choice-products/choice-products.component';
 import { HomeComponent } from './pages/home/home.component';
 import { TextPlaceComponent } from './components/text-place/text-place.component';
+import { FoodPageComponent } from './pages/food-page/food-page.component';
+import { ReplaceDecimalPipe } from 'src/app/replaceDecimal.pipe';
+import { CartItemComponent } from './pages/food-page/cart-item/cart-item.component';
 
 
 
@@ -12,10 +15,15 @@ import { TextPlaceComponent } from './components/text-place/text-place.component
     HeaderComponent,
     ChoiceProductsComponent,
     HomeComponent,
-    TextPlaceComponent
+    TextPlaceComponent,
+    FoodPageComponent,
+    ReplaceDecimalPipe,
+    CartItemComponent,
+    
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    
   ]
 })
 export class HomeModule { }

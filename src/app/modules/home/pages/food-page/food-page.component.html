@@ -1,0 +1,14 @@
+<main class="visualizeFood">
+  <div>
+    <button class="goBack">
+      <img src="../../../../../assets/seta-direita 1.png" width="30" height="40">
+    </button>
+  </div>
+  <app-cart-item *ngFor="let item of foodList" [item]="item"
+  (adicionarProduto)="adicionarProduto($event)" 
+  (removerProduto)="removerProduto($event)"></app-cart-item>
+</main>
+<div class="divisor"></div>
+<section class="visualizePrice">
+  Valor total da compra: R$ {{ total.toFixed(2) | replaceDecimal }}
+</section>

@@ -1,39 +1,48 @@
 @import '../../../../../dist/scss/variables.scss';
 
-.flex-container {
-    overflow: hidden;
-}
+.container {
+    display: flex;
+    justify-content: space-between;
+  }
   
+  .left-div {
+    margin-left: 10px;
+    width: 40%;
+  }
+  
+  .place-name{
+    display: block;
+ 
+  }
 
-.segundo{
+  .location-client{
+    display: flex;
+  }
+  
+  .divisor{
+    width: 20%;
+  }
+
+  .right-div {
     float: right;
     display: flex;
     padding-right: 15px;
      align-items: center;
-     top: -35px;
-     position: relative;
       
-}
+     position: relative;
+   
+  }
 
-.clientLocal{
-     display: flex;    
-    padding-left: 5px;
-}
-
-h2{
-    padding-left: 8px;
-}
-
-.Open{
-    padding-right: 14px;
-    padding-left: 14px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    background-color:$secondary-botton-color;
+  .Open{
     border-radius: 10px;
+    width: 121px;
+    height: 31px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
     color:$secondary-color;
 }
 
-.hora{
-    padding-left: 5px;
-}
+
+  
