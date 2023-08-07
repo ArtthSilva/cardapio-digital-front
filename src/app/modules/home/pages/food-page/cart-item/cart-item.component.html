@@ -1,13 +1,13 @@
 <div class="Food">
     <div class="ImageFood">
-      <img src="../../../../../../assets/hamburguer.png" width="160" height="160" alt="">  
+      <img src="../../../../../../assets/hamburguer.png"  alt="">  
     </div>
     <div class="TitleFood">
       <h3>{{ item.title }}</h3>
       <h5>{{ item.description }}</h5>
     </div>
     <div class="PriceFood">
-      <h4>R$ {{ item.price.toFixed(2) | replaceDecimal }}</h4>
+      <h4 >R$ {{ item.price.toFixed(2) | replaceDecimal }}</h4>
       <div class="MoreOrLess">
         <button class="buttonAdd" (click)="adicionarProduto.emit(item.price)">
             <img src="../../../../../assets/simbolo-de-adicao-de-espessura (2) 1.png" width="30" height="30" alt="">

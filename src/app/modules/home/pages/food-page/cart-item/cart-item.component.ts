@@ -6,6 +6,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styleUrls: ['./cart-item.component.scss']
 })
 export class CartItemComponent {
+
   total: number = 0;
   @Input() item: any;
   @Output() adicionarProduto = new EventEmitter<number>();

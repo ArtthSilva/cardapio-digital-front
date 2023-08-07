@@ -6,3 +6,5 @@ export interface FoodModel{
     quantity: number,
     type: string
 }
+
+ 

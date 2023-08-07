@@ -1,87 +1,107 @@
 @import '../../../../../../dist/scss/variables.scss';
- 
 
-.visualizeFood{
-     
-     background-color: $secondary-color;
-     width: 90%;
-     margin-left: 70px;
-     margin-top: 10px;
-     height: 800px;
-     border-radius: 15px;
-    overflow: auto;
-    
-}
-
-.visualizePrice{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 15%;  
-    background-color:$tertiary-color ;
-}
-
-.goBack{
-  
-    margin-left: 25px;
-    margin-top: 15px;
-    background-color: $secondary-color;
-    border: none;
-   
-}
-
-.Food{
+.visualizeFood {
+  background-color: $secondary-color;
+  width: 90%;
+  margin-left: 70px;
   margin-top: 10px;
-    display: grid;
-  grid-template-columns: 1fr 2fr 1fr; 
-  
-   
-}
-.ImageFood{
-    margin-left: 15%;
-
+  border-radius: 15px;
+  overflow: auto;
 }
 
-.TitleFood{
-    display: flex;
-  flex-direction: column; /* Define a direção dos itens como coluna */
-  align-items: flex-start; 
-  margin-right: 10%;
-    
+.visualizePrice {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 15%;
+  background-color: $tertiary-color;
 }
 
-.PriceFood{
-    margin-left: 38%;
-    display: flex;
+.goBack {
+  margin-left: 25px;
+  margin-top: 15px;
+  background-color: $secondary-color;
+  border: none;
+}
+
+.Food {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.ImageFood img {
+  max-width: 90%;
+  height: auto;
+  margin-left: 15px;
+}
+
+.TitleFood {
+  display: flex;
   flex-direction: column;
-}  
-
-hr{
-    color: gray;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    margin-left: 5%;
-  margin-right: 5%;
-}
- 
-.MoreOrLess{
-    padding-top: 70px;
+  align-items: flex-start;
+  margin-left: 12%;
+  margin-right: 12%;
+  flex: 1;
 }
 
-.buttonAdd{
-    border: none; /* Remove a borda do botão */
-    background: none; /* Remove o fundo do botão */
-    padding: 0; /* Remove o preenchimento interno do botão */
-    padding-right: 15px;
-     
+.TitleFood h3 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.buttonSub{
-    border: none; /* Remove a borda do botão */
-    background: none; /* Remove o fundo do botão */
-    padding: 0; /* Remove o preenchimento interno do botão */
-   }
 
-h5{
+.TitleFood h5 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.PriceFood {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+@media (min-width: 769px) {
+  .PriceFood{
+    padding-right: 17%;
+  }
+
+  .TitleFood {
+    margin-left: 4%;
+  }
+}
+
+hr {
+  color: #BEBEBE;
+  margin: 3%;
+}
+
+.MoreOrLess {
+  padding-top: 70px;
+  display: flex;
+}
+
+.buttonAdd,
+.buttonSub {
+  border: none;
+  background: none;
+  padding: 0;
+  
+}
+.buttonSub {
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+h5 {
   padding-top: 10px;
   color: #6C6C6C;
 }
+
+h4{
+  margin-right: 20px;
+}
+
+

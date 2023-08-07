@@ -11,11 +11,15 @@ export class FoodService {
 
   constructor(private httpClient: HttpClient) { }
 
-  getAllFood(): Observable<FoodModel> {
-    return this.httpClient.get<FoodModel>(`${API_PATH}foods`)
-    .pipe( 
-      res => res,
-      error => error
-    )
+  getAllFood(): Observable<FoodModel[]> {
+    return this.httpClient.get<FoodModel[]>(`${API_PATH}foods`);
+  }
+
+  getFoodsForType(type: string): Observable<FoodModel[]> {
+    return this.httpClient.get<FoodModel[]>(`${API_PATH}foods/type/${type}`);
+  }
+
+  getAllTypes(): Observable<FoodModel[]> {
+    return this.httpClient.get<FoodModel[]>(`${API_PATH}foods/types`);
   }
 }

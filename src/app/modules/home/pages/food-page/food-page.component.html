@@ -1,6 +1,6 @@
 <main class="visualizeFood">
   <div>
-    <button class="goBack">
+    <button class="goBack"  (click)="goBack()">
       <img src="../../../../../assets/seta-direita 1.png" width="30" height="40">
     </button>
   </div>
@@ -10,5 +10,13 @@
 </main>
 <div class="divisor"></div>
 <section class="visualizePrice">
-  Valor total da compra: R$ {{ total.toFixed(2) | replaceDecimal }}
+  
+  <div class="textPrice">
+      <img src="../../../../../assets/escrita.png" width="35" height="35" alt="">
+  <h4>Ver meu pedido </h4>
+  </div>
+
+  <div class="priceTotal">
+    R$ {{ total.toFixed(2) | replaceDecimal }}
+  </div>
 </section>
